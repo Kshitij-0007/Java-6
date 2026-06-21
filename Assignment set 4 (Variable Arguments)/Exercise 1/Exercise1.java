@@ -6,22 +6,19 @@
  */
 public class Exercise1 {
 
-    void show(int a) {
-        System.out.println("{" + a + "}");
-    }
-
-    void show(int a, int b) {
-        System.out.println("{" + a + "," + b + "}");
-    }
-
-    void show(int a, int b, int c) {
-        System.out.println("{" + a + "," + b + "," + c + "}");
+    void show(int... a) {
+        for (int i : a) {
+            System.out.print(i + " ");
+        }
     }
 
     public static void main(String[] args) {
         Exercise1 e = new Exercise1();
         e.show(10);
+        System.out.println("");
         e.show(10, 20);
+        System.out.println("");
         e.show(10, 20, 30);
+        System.out.println("");
     }
 }
