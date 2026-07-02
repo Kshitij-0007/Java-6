@@ -14,9 +14,9 @@ class Student {
         return "Kshitij";
     }
 
-    int getInfo() {
-        return 20;
-    }
+//     int getInfo() {
+//         return 20;
+//     }
 }
 
 public class Exercise3 {
